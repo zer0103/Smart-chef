@@ -14,13 +14,94 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+
   <!-- First font-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap"
     rel="stylesheet">
   <script src="https://kit.fontawesome.com/474cf66076.js" crossorigin="anonymous"></script>
+  <style>
+  h3{
+  font-family: "Amiri", serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2.6rem;
+  line-height: 2;
+}
+h4{
+  font-family: "Amiri", serif;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2.2rem;
+  line-height: 2;
+}
+h6{
+  font-family: "Amiri", serif;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 2;
+  font-size: 1.9rem;
+}
+p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+
+}
+
+/* Example custom styles */
+.carousel img {
+  height: 400px;
+  width: 75%;
+  
+}
+
+
+.sign-in-button{
+  width: 10rem;
+}
+/* navbar */
+
+/* Carousel */
+.slide{
+  height: 400px;
+
+}
+
+
+/* Reviews Section */
+
+.Reviews-card{
+
+  height: 300px;
+  text-align: center;
+  margin: 3% 5%;
+}
+.reviews-img{
+  width: 20%;
+  border-radius: 100%;
+  margin: 20px ;
+}
+
+/* Best dishes */
+.Best-dishes-img{
+  width: 100%;
+
+}
+.Best-dishes-card{
+  height: 400;
+  text-align: center;
+  margin: 3% 5%;
+}
+
+/* تسجيل الدخول - Smart Chef */
+.sign-in {
+  height: 25%;
+  margin:  auto;
+  width: 40%;  
+}
+  </style>
 </head>
 
 <body>
@@ -48,21 +129,24 @@
   <!-- Carousel -->
   <div id="carouselExample" class=" carousel slide bg-secondary " data-bs-ride="carousel">
     <div class="carousel-inner ">
-      <div class="carousel-item active slide s1">
+      <div class="carousel-item active slide ">
         <div class="d-flex justify-content-center align-items-center h-100">
-          <div class="text-center text-white">
+          <div class="text-center text-white .carousel img">
+            <img class="reviews-img" src="{{ url_for('static', filename='img/s1.jpg')}}">
           </div>
         </div>
       </div>
-      <div class="carousel-item slide s2">
+      <div class="carousel-item slide ">
         <div class="d-flex justify-content-center align-items-center h-100">
-          <div class="text-center text-white">
+          <div class="text-center text-white .carousel img">
+            <img class="reviews-img" src="{{ url_for('static', filename='img/s2.jpg')}}">
           </div>
         </div>
       </div>
-      <div class="carousel-item slide s3 ">
+      <div class="carousel-item slide  ">
         <div class="d-flex justify-content-center align-items-center h-100">
-          <div class="text-center text-white">
+          <div class="text-center text-white .carousel img">
+            <img class="reviews-img" src="{{ url_for('static', filename='img/s3.jpg')}}">
           </div>
         </div>
       </div>
